@@ -15,6 +15,7 @@ class RegisterController extends Controller {
                 ->add('username', 'text')
                 ->add('email', 'text')
                 ->add('password', 'text')
+                
                 ->getForm();
 
         return $this->render('UserBundle:Register:registration.html.twig', array('form' => $form));
